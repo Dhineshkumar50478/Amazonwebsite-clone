@@ -208,35 +208,108 @@ header{
 /**Trending Sale**/
 #trending-sale
 {
-  height: 400px;
+  display: flex;
+  height: 250px;
   width: 100%;  
-  background-image: url("./Website-Resources/tshirt-background.jpg");
+  background-image: url("./Website-Resources/tshirt-background-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+#left-nav-block
+{
+  width: 50px;
+  height: 100%;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+#left-nav-block:active,#right-nav-block:active
+{
+  border: 2px solid rgb(84, 77, 77);
+}
+#left-nav,#right-nav
+{
+  font-size: 40px;
+  margin-top: 100px;
+  margin-left: 10px;
+}
+#right-nav-block
+{
+  width: 50px;
+  height: 100%;
+  margin-top: 4px;
+  margin-left: 1420px;
 }
 #trending-sale-gradient
 {
   height: 140px;
   width: 100%;
-  background-image: linear-gradient(to top, rgba(228, 190, 140, 0), #f5debc);
+  background-image: linear-gradient(to top, rgba(228, 190, 140, 0), #f4dac2ef);
 }
 
 /**Offre block**/
-#offer-product-block
+#offer-block
 {
+  height: 900px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 350px 350px 350px 350px;
+  grid-template-rows: 420px 420px 420px 420px;
+  row-gap: 20px;
+  column-gap: 29px;
+  background-color:gainsboro;
+}
+#offer-item1
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height:420px;
-  width: 329px;
-  border: 2px solid black;
-  margin-left: 10px;
+  width: 360px;
+  background-color: #ffffff;
+  border: 1px;
 }
 #top
 {
+  height: 70px;
+  width: 320px;
+}
+#top h2{
+  margin-top: 20px;
+}
+#mid
+{
+  display: grid;
+  grid-template-rows: 150px 150px;
+  grid-template-columns: 160px 160px;
+  column-gap: 20px;
+  height: 300px;
+  width: 320px;
+}
+#bottom
+{
+  height: 60px;
+  width: 320px;
+}
+#item-img
+{
+ height: 110px;
+ width: 140px;
+}
+#item-text
+{
+font-size: 12px;
+height: 36px;
+width: 150px;
+}
+#offer-item-bottom-text
+{
+  font-size: 12px;
+  text-decoration: none;
+  color: #007185;
   margin-top: 10px;
 }
-#middle
+#link
 {
-  display:inline-block;
-}
-#middle div{
-  border: 2px solid black;
+  margin-top: 15px;
 }
